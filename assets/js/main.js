@@ -131,10 +131,10 @@ const validateYear = () => {
 
   // Check if the input is numeric and between 01 and 12
   // const month = parseInt(value, 10);
-  if (!/^\d{2}$/.test(cyear) || cyear < 20 || cyear > 24) {
+  if (!/^\d{2}$/.test(cyear) || cyear < 20 || cyear > 30) {
     dateError.classList.remove("hidden");
     dateError.classList.add("block");
-    dateError.textContent = "Invalid year. Enter a year between 20 - 24";
+    dateError.textContent = "Invalid year. Enter a year between 20 - 30";
     return false;
   }
 
